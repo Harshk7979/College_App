@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/cimage_logo" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="monospace"
+        android:text="Welcome to CIMAGE Group"
+        android:textColor="@color/purple_700"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="16dp"
+        android:text="CIMAGE Group consist of 3 Colleges Under Patliputra University, and 1 College under Aryabhatta Knowledge University.
+CIMAGE is the only Super Resource Centre of IIT Bombay in Bihar."
+        android:textColor="@color/black" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" Admission Enquiry 2023 "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:id="@+id/edt_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter your full name"
+                android:paddingLeft="20dp"
+                android:background="@drawable/edt_grey"
+                android:layout_marginTop="5dp"
+                android:inputType="text"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Mobile Number" />
+
+            <EditText
+                android:id="@+id/edt_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/edt_grey"
+                android:layout_marginTop="5dp"
+                android:hint="Enter your mobile number"
+                android:textColor="@color/black"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="Email ID" />
+
+            <EditText
+                android:id="@+id/edt_email_id"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:background="@drawable/edt_grey"
+                android:layout_marginTop="5dp"
+                android:hint="Enter your email id"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:text="Course" />
+
+            <Spinner
+                android:id="@+id/spnr_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/course_name"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_send_enq"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Send Enquiry"
+                />
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

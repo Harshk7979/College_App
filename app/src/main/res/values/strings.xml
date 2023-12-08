@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CimagePatliputra</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="news_event">News &amp; Event</string>
+
+    <string name="hint_pick_up_date">dd/mm/yyyy</string>
+
+    <string-array name="course_name">
+        <item>Please choose an option</item>
+        <item>B.C.A</item>
+        <item>B.B.A</item>
+        <item>B.sc IT</item>
+        <item>BBM</item>
+        <item>B.Com(P)</item>
+        <item>PGDM</item>
+    </string-array>
+    <string-array name="faculty_name">
+        <item>Please choose an option</item>
+        <item>IT</item>
+        <item>MANAGEMENT</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home_screen">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+
+
+            <include layout="@layout/home_admission_form" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/time_of_india_award" />
+
+            <com.example.cimagepatliputra.utils.HorizontalListView
+                android:id="@+id/lst_education"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                app:dividerWidth="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Times of India Declared, CIMAGE as No.1 College in Patna,Bihar"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top BCA College in Patna, Bihar | 12000+ Campus Placement"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CIMAGE Group of Institutions is ranked as top BCA college in Patna, Bihar which offers world-class education and highest Campus Placement. It is one of the best colleges across Bihar for BCA, BBA and other IT-Management Courses. For students who are seeking admission to a renowned institution for campus placement, CIMAGE is a perfect choice. When it comes to the Top BCA college in Patna, Bihar, CIMAGE has always been the first choice of students. Along with BCA course it also offers BBA, BBM, BSc.IT, PGDM, &amp; B.Com (P) Courses with Campus Placement facility."
+                android:layout_marginTop="20dp"
+                />
+
+            <ListView
+                android:id="@+id/lst_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
